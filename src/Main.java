@@ -14,10 +14,9 @@ public class Main {
     }
 
     private static String reverse(String stringInput) {
-        char[] string = stringInput.toCharArray();
-        char[] stringReverse = new char[string.length];
-        for (int i = 0; i < string.length; i++) {
-            stringReverse[(string.length - 1) - i] = string[i];
+        char[] stringReverse = new char[stringInput.length()];
+        for (int i = 0; i < stringInput.length(); i++) {
+            stringReverse[(stringInput.length() - 1) - i] = stringInput.toCharArray()[i];
         }
         return String.valueOf(stringReverse);
     }
